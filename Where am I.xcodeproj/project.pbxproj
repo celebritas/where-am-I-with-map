@@ -13,6 +13,7 @@
 		0D1DD67D1B31E4440078DE76 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D1DD67C1B31E4440078DE76 /* Images.xcassets */; };
 		0D1DD6801B31E4440078DE76 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D1DD67E1B31E4440078DE76 /* LaunchScreen.xib */; };
 		0D1DD68C1B31E4440078DE76 /* Where_am_ITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1DD68B1B31E4440078DE76 /* Where_am_ITests.swift */; };
+		0D1DD6961B31E4500078DE76 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D1DD6951B31E4500078DE76 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		0D1DD6851B31E4440078DE76 /* Where am ITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Where am ITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D1DD68A1B31E4440078DE76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D1DD68B1B31E4440078DE76 /* Where_am_ITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Where_am_ITests.swift; sourceTree = "<group>"; };
+		0D1DD6951B31E4500078DE76 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D1DD6961B31E4500078DE76 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +93,7 @@
 		0D1DD6731B31E4440078DE76 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0D1DD6951B31E4500078DE76 /* CoreLocation.framework */,
 				0D1DD6741B31E4440078DE76 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -161,6 +165,7 @@
 				TargetAttributes = {
 					0D1DD66F1B31E4440078DE76 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = B9J84V384C;
 					};
 					0D1DD6841B31E4440078DE76 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -340,9 +345,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Where am I/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -350,9 +358,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Where am I/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
